@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+//sistema de design
+<canvas width="600" height="400"></canvas>
+<script>
+// desenhando um rectangulo
+    var tela = document.querySelector('canvas');
+    var pincel =tela.getContext('2d');
+// fillRect e o mesmo que preenchimento Rectangulo, desde o inicio ponto x e y
+    pincel.fillStyle = 'lightgrey'; // propriedade tipo de preenchimento("quando pintar use essa cor")
+    pincel.fillRect(0, 0, 600, 400); // nesse caso vai exibir a tela preta
+
+    //na mesma posicao vamos adicionar uma tinta diferente nas duas laterais
+
+    pincel.fillStyle = "green"; //sempre mantenha o padrao de Primeiro a tinta e depois a medida e pinta
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect = (400, 0, 200, 400);
+    //                 x    y   x    y
+  
+</script>
